@@ -5,7 +5,10 @@
   "main": "main.js",
   "scripts": {
     "api": "newman run api-test/Schemademo.postman_collection.json",
+    "build-it": "cd admin && npm install",
     "dev": "cd schedule-data-service && node index"
+    
+
   },
   "keywords": [],
   "author": "",
