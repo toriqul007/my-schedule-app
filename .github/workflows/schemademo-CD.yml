@@ -24,7 +24,7 @@ jobs:
         cache: 'npm'
     - run: npm ci
 
-    # run the npm build command (not used in our  project)
+    # run the npm build command (not used in our project)
 
     - run: cd admin/ && npm ci 
     - run: cd schedule-data-service/ && npm ci
