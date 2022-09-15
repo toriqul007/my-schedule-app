@@ -28,10 +28,8 @@ jobs:
     - run: npm run build --if-present 
 
     - run: npm run build-it
-    - run: cd schedule-data-service && npm install
+    - run: cd schedule-data-service && npm install && node index
     - run: npm install -g newman
-    - run: npm install -g pm2
-    - run: pm2 start "npm run dev"
     - run: npm run api
     
     
