@@ -6,7 +6,7 @@
   "scripts": {
     "api": "newman run api-test/Schemademo.postman_collection.json",
     "dev": "cd schedule-data-service && node index",
-    "build-it": "cd admin && npm install && npm run build",
+    "build-it": "cd admin && npm install",
     "start-it": "cd schedule-data-service/ && npm install && node index"
   },
   "keywords": [],
