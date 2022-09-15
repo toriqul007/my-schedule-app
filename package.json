@@ -4,10 +4,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    
     "api": "newman run api-test/Schemademo.postman_collection.json",
     "dev": "cd schedule-data-service && node index",
-    "build-it": "cd admin && npm install",
+    "build-it": "cd admin && npm install && vite build",
     "start-it": "cd schedule-data-service/ && npm install && node index"
   },
   "keywords": [],
