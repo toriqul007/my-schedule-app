@@ -25,7 +25,8 @@ jobs:
     - run: npm ci
 
     # run the npm build command (not used in our project)
-    
+    - run: npm run build --if-present 
+
     - run: npm run build-it
     - run: npm run start-it
     - run: npm install -g newman
