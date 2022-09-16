@@ -27,8 +27,8 @@ jobs:
     # run the npm build command (not used in our  project)
 
     - run: cd admin/ && npm ci 
-    - run: cd admin/ && npm run build
-    - run: cd schedule-data-service/ && npm ci
+    - run: cd admin/ && npm run build && echo 0
+    - run: echo 0 && cd schedule-data-service/ && npm ci
     - run: npm install -g pm2
     - run: npm install -g newman
     - run: pm2 start "npm run dev"
